@@ -1,0 +1,35 @@
+.header {
+  padding: 4em 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    width: 60%;
+
+    &>h1 {
+      font-size: 2.8rem;
+    }
+
+    &>h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+
+  &__img {
+    z-index: -3;
+    position: absolute;
+    display: inherit;
+    justify-content: flex-end;
+
+    &>img {
+      height: 500px;
+    }
+  }
+}
