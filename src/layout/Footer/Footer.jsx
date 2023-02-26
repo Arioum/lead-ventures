@@ -13,6 +13,9 @@ const Footer = () => {
 
         </div>
       </div>
+      <div className={classes.footer__copyright}>
+        ©Designed & Built by <a href="https://github.com/Arioum" target='_blank'>Arioum</a>. All Rights Reserved
+      </div>
     </footer>
   )
 }
