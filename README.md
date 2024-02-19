@@ -1,1 +1,1 @@
-###Built using Vite + React
+### Lead Ventures
