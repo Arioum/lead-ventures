@@ -1,11 +1,11 @@
-import Button from "../../components/Button/Button";
-import DotPatternSVG from "../../assets/dot-pattern.svg";
-import MouseSVG from "../../assets/mouse-scroll.svg";
-import classes from "./hero.module.scss";
+import Button from '../../components/Button/Button';
+import DotPatternSVG from '../../assets/dot-pattern.svg';
+import MouseSVG from '../../assets/mouse-scroll.svg';
+import classes from './hero.module.scss';
 
 const Hero = () => {
   return (
-    <header className={classes.header}>
+    <header className={`container ${classes.header}`}>
       <section className={classes.sectionTop}>
         <div className={classes.header__text}>
           <h1>

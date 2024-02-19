@@ -4,7 +4,7 @@ import AboutUsSVG from "../../assets/about-us-graphic.svg";
 
 const About = () => {
   return (
-    <section className={classes.about}>
+    <section className={`container ${classes.about}`}>
       <div className={classes.about__sectionLeft}>
         <h2>About Us</h2>
         <h4>
