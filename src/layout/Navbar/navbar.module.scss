@@ -1,7 +1,12 @@
 .navbar {
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &__logo {
+    width: 200px;
+  }
 
   &__navLinkContainer {
     font-size: 1rem;
@@ -12,7 +17,6 @@
 
     &__navItems:hover {
       color: #fff;
-      cursor: pointer;
     }
   }
 
@@ -20,5 +24,21 @@
     display: flex;
     gap: 2em;
   }
+}
 
+@media (max-width: 968px) {
+  .navbar {
+    &__logo {
+      width: 140px;
+    }
+
+    &__navLinkContainer {
+      font-size: 0.8rem;
+      gap: 2em;
+    }
+
+    &__btnContainer {
+      gap: 1em;
+    }
+  }
 }
