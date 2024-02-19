@@ -1,4 +1,3 @@
-import React from 'react'
 import Button from '../../components/Button/Button'
 import leadLogo from '../../assets/brand-logo.svg'
 import classes from './navbar.module.scss'

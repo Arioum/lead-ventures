@@ -1,4 +1,4 @@
-.about{
+.about {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -6,15 +6,16 @@
   &__sectionLeft {
     width: 50em;
 
-    &>h2 {
+    & > h2 {
       font-size: 2rem;
-      color: #4DFA92;
+      color: #4dfa92;
     }
 
-    &>h4 {
+    & > h4 {
       font-size: 1.2rem;
       font-weight: 400;
       margin: 1em 0 2em 0;
+      line-height: 2;
     }
   }
 }
