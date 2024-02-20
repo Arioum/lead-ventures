@@ -1,7 +1,25 @@
 .container {
   max-width: 114em;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 0 1rem;
+}
+
+.mainLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 20em;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #4dfa92;
+}
+
+.h3paragraph {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 1em 0 2em 0;
+  line-height: 2;
 }
 
 @keyframes logo-spin {

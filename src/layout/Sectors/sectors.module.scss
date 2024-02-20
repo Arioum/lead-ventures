@@ -1,0 +1,20 @@
+.sectors {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+
+  &__graphic {
+    & > img {
+      width: 500px;
+    }
+  }
+
+  &__textArea {
+    &__funding {
+      color: white;
+      font-size: 2.8rem;
+      font-weight: 600;
+      text-shadow: 2px 2px 0 #4dfa92;
+    }
+  }
+}
