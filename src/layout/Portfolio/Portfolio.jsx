@@ -8,7 +8,7 @@ import LogoFunland from '../../assets/portfolio-logos/funland.svg';
 import LogoKalinGo from '../../assets/portfolio-logos/kalin-go.svg';
 import LogoDigvent from '../../assets/portfolio-logos/digvent.svg';
 import LogoJvMotors from '../../assets/portfolio-logos/jv-motors.svg';
-import LogoMaltov from '../../assets/portfolio-logos/Maltov.svg';
+import LogoMaltov from '../../assets/portfolio-logos/maltov.svg';
 import LogoBanfari from '../../assets/portfolio-logos/banfari.svg';
 import LogoLoav from '../../assets/portfolio-logos/loav.svg';
 import LogoGriff from '../../assets/portfolio-logos/griff.svg';
