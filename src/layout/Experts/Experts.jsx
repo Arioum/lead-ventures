@@ -23,8 +23,9 @@ const Experts = () => {
     <section className={classes.experts}>
       <h3>What Our Experts Say</h3>
       <div className={classes.experts__opinions}>
-        {experts.map((expert) => (
+        {experts.map((expert, index) => (
           <div
+            key={index}
             className={`${classes.experts__opinions__expert} ${
               expert.layoutSwap
                 ? classes.experts__opinions__expert__orderSwap
