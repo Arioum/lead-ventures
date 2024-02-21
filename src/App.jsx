@@ -4,6 +4,7 @@ import About from './layout/AboutUs/About';
 import Sectors from './layout/Sectors/Sectors';
 import Stats from './layout/Stats/Stats';
 import Experts from './layout/Experts/Experts';
+import Portfolio from './layout/Portfolio/Portfolio';
 import Newsletter from './layout/Newsletter/Newsletter';
 import Footer from './layout/Footer/Footer';
 import './App.scss';
@@ -18,6 +19,7 @@ const App = () => {
         <Sectors />
         <Stats />
         <Experts />
+        <Portfolio />
         <Newsletter />
       </main>
       <Footer />

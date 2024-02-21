@@ -48,6 +48,7 @@
   &__right {
     display: flex;
     gap: 2em;
+
     & > input[type='email'] {
       padding: 1em 3em;
       min-width: 300px;
@@ -56,6 +57,7 @@
       border-radius: 10px;
       background-color: #fff;
       color: #202020;
+      font-weight: 600;
 
       &::placeholder {
         font-weight: 600;
