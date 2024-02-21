@@ -1,11 +1,12 @@
-import React from "react";
-import classes from "./button.module.scss";
+import React from 'react';
+import classes from './button.module.scss';
 
 const BUTTON_STYLE = {
-  primary: "btnPrimary",
-  secondary: "btnSecondary",
-  small: "btnSmall",
-  medium: "btnMedium",
+  primary: 'btnPrimary',
+  secondary: 'btnSecondary',
+  small: 'btnSmall',
+  medium: 'btnMedium',
+  large: 'btnLarge',
 };
 
 const Button = ({ children, variant, size }) => {

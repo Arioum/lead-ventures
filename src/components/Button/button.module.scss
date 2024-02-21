@@ -27,7 +27,7 @@
 
 .btnSmall {
   padding: 0 1em;
-  width: 6em;
+  max-width: fit-content;
 }
 
 .btnMedium {
@@ -38,6 +38,7 @@
 .btnLarge {
   padding: 0 3em;
   max-width: fit-content;
+  height: 3rem;
 }
 
 @media (max-width: 968px) {
