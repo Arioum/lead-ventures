@@ -1,5 +1,4 @@
 import Button from '../../components/Button/Button';
-import classes from './portfolio.module.scss';
 import LogoBekis from '../../assets/portfolio-logos/bekis.svg';
 import LogoDonsee from '../../assets/portfolio-logos/donsee.svg';
 import LogoUpLite from '../../assets/portfolio-logos/up-lite.svg';
@@ -13,6 +12,7 @@ import LogoBanfari from '../../assets/portfolio-logos/banfari.svg';
 import LogoLoav from '../../assets/portfolio-logos/loav.svg';
 import LogoGriff from '../../assets/portfolio-logos/griff.svg';
 import LogoLabelvale from '../../assets/portfolio-logos/labelvale.svg';
+import classes from './portfolio.module.scss';
 
 const Portfolio = () => {
   return (
