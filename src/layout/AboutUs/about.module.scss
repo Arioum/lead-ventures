@@ -6,12 +6,21 @@
   align-items: center;
   gap: 6em;
 
-  @include media(lg) {
+  @include media(md) {
     flex-direction: column;
   }
 
   &__sectionLeft {
     max-width: 470px;
+
+    @include media(lg) {
+      max-width: 400px;
+    }
+
+    @include media(md) {
+      max-width: 500px;
+      text-align: center;
+    }
   }
 
   &__sectionRight {
