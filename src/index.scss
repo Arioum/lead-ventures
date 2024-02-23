@@ -31,3 +31,29 @@ a {
   text-decoration: none;
   color: #ffffffde;
 }
+
+.container {
+  max-width: 114em;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.mainLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 20em;
+  margin-top: 10em;
+  margin-bottom: 10rem;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #4dfa92;
+}
+
+.h3paragraph {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 1em 0 2em 0;
+  line-height: 2;
+}

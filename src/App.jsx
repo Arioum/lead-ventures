@@ -8,7 +8,6 @@ import Portfolio from './layout/Portfolio/Portfolio';
 import Blogs from './layout/Blogs/Blogs';
 import Newsletter from './layout/Newsletter/Newsletter';
 import Footer from './layout/Footer/Footer';
-import './App.scss';
 
 const App = () => {
   return (
