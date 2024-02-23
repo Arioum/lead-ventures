@@ -1,3 +1,5 @@
+@import '../../abstracts.scss';
+
 .footer {
   background-color: #304f45;
 
@@ -9,11 +11,22 @@
     align-items: center;
     gap: 10em;
 
+    @include media(lg) {
+      flex-direction: column;
+      gap: 6em;
+    }
+
     &__left {
       max-width: 300px;
       display: flex;
       flex-direction: column;
       gap: 1.6em;
+
+      @include media(lg) {
+        align-items: center;
+        text-align: center;
+        gap: 1.6em;
+      }
 
       & > img {
         width: 200px;
@@ -36,6 +49,11 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+
+      @include media(lg) {
+        max-width: 500px;
+        gap: 3em;
+      }
 
       & > div {
         display: flex;

@@ -49,6 +49,10 @@
 .sectionBottom {
   display: flex;
   justify-content: center;
+
+  & > img {
+    transform: translateY(60px);
+  }
 }
 
 @keyframes scroll {

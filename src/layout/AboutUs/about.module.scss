@@ -1,9 +1,28 @@
+@import '../../abstracts.scss';
+
 .about {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 6em;
+
+  @include media(lg) {
+    flex-direction: column;
+  }
 
   &__sectionLeft {
-    width: 50em;
+    max-width: 470px;
+  }
+
+  &__sectionRight {
+    width: 50%;
+
+    @include media(lg) {
+      max-width: 100%;
+    }
+
+    & > img {
+      max-width: 100%;
+    }
   }
 }
