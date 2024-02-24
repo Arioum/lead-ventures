@@ -1,6 +1,6 @@
 import Button from '../../components/Button/Button';
-import DotPatternSVG from '../../assets/dot-pattern.svg';
-import MouseSVG from '../../assets/mouse-scroll.svg';
+import DotPatternSVG from '/assets/dot-pattern.svg';
+import MouseSVG from '/assets/mouse-scroll.svg';
 import classes from './hero.module.scss';
 
 const Hero = () => {

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FiMenu } from 'react-icons/fi';
+import { IoClose } from 'react-icons/io5';
 import Button from '../../components/Button/Button';
 import leadLogo from '../../assets/brand-logo.svg';
 import classes from './navbar.module.scss';
@@ -47,7 +48,7 @@ const Navbar = () => {
         className={classes.navbar__menu}
         onClick={() => setMenuToggle(!menuToggle)}
       >
-        <FiMenu />
+        {menuToggle ? <IoClose size={30} /> : <FiMenu size={25} />}
       </button>
       {menuToggle && (
         <div className={classes.navbar__menuOverlay}>

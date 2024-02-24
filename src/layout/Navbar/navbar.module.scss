@@ -53,7 +53,8 @@
     display: none;
     border: none;
     background-color: transparent;
-    height: fit-content;
+    height: min-content;
+    width: min-content;
     cursor: pointer;
 
     @include media(md) {
@@ -90,6 +91,10 @@
         display: inherit;
         gap: 2em;
         padding: 0.6rem;
+
+        @include media(md) {
+          font-size: .8rem;
+        }
 
         &:hover {
           background-color: #4dfa92;
