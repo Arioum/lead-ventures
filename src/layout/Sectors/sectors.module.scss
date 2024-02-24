@@ -17,8 +17,7 @@
     }
 
     @include media(md) {
-      order: 2;
-      min-width: 400px;
+      // min-width: 400px;
       max-width: 100%;
     }
   }

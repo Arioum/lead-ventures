@@ -1,9 +1,15 @@
+@import '../../abstracts.scss';
+
 .experts {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10em;
+
+  @include media(md) {
+    gap: 6em;
+  }
 
   &__opinions {
     display: flex;
@@ -17,14 +23,26 @@
       justify-items: center;
       gap: 6em;
 
+      @include media(md) {
+        grid-template-columns: 1fr;
+      }
+
       &__orderSwap {
         & > div:nth-child(1) {
           order: 1;
+
+          @include media(md) {
+            order: 0;
+          }
         }
       }
 
       &__graphic {
         height: 360px;
+
+        @include media(lg) {
+          height: 300px;
+        }
 
         & > img {
           height: 100%;
@@ -50,12 +68,20 @@
             color: #4dfa92;
             font-size: 1.6rem;
             font-weight: 600;
+
+            @include media(lg) {
+              font-size: 1.4rem;
+            }
           }
 
           & > h6 {
             color: #4dfa92;
             font-size: 1rem;
             font-weight: 500;
+
+            @include media(lg) {
+              font-size: 0.8rem;
+            }
           }
         }
 
@@ -86,6 +112,10 @@
           font-size: 1rem;
           line-height: 2;
           font-weight: 500;
+
+          @include media(lg) {
+            font-size: 0.8rem;
+          }
         }
       }
     }

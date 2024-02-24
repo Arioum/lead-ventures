@@ -1,3 +1,5 @@
+@import '../../abstracts.scss';
+
 $article-height: 320px;
 $thumbnail-height: 190px;
 
@@ -5,23 +7,35 @@ $thumbnail-height: 190px;
   background-color: #fff;
   color: #000;
   height: $article-height;
-  max-width: 300px;
+  min-width: 300px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 6px 6px 0 0 #4dfa92;
+
+  @include media(sm) {
+    min-width: 200px;
+  }
 
   &__thumbnail {
     height: $thumbnail-height;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    min-height: max-content;
 
     & > img {
-      height: 100%;
+      width: 100%;
+
+      @include media(2xl) {
+        max-width: 100%;
+        min-width: fit-content;
+      }
     }
   }
 
   &__info {
-    padding: .6em 1.6em;
+    padding: 0.6em 1.6em;
     height: calc(100% - $thumbnail-height);
     display: flex;
     justify-content: space-between;
@@ -29,6 +43,16 @@ $thumbnail-height: 190px;
 
     & > h6 {
       font-size: 1rem;
+
+      @include media(sm) {
+        font-size: 0.8rem;
+      }
+    }
+
+    & > p {
+      @include media(xl) {
+        font-size: 0.8rem;
+      }
     }
 
     &__footer {
@@ -44,12 +68,25 @@ $thumbnail-height: 190px;
         align-items: center;
         justify-content: space-between;
 
-        & > span:nth-child(1) {
-          color: #0f4634;
+        @include media(sm) {
+          gap: 0;
         }
 
-        & > span:nth-child(2) {
+        & > span:nth-child(1) {
+          color: #0f4634;
+
+          @include media(sm) {
+            font-size: 0.6rem;
+          }
+        }
+
+        & > span:nth-child(2),
+        & > span:nth-child(3) {
           color: #474747;
+
+          @include media(sm) {
+            font-size: 0.6rem;
+          }
         }
       }
     }

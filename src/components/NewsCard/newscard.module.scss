@@ -1,3 +1,5 @@
+@import '../../abstracts.scss';
+
 .news {
   background-color: #fff;
   color: #000;
@@ -7,13 +9,25 @@
   overflow: hidden;
   box-shadow: 6px 6px 0 0 #4dfa92;
 
+  @include media(lg) {
+    width: 100%;
+  }
+
   &__thumbnail {
     height: 190px;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    min-height: max-content;
 
     & > img {
-      height: 100%;
+      max-height: 190px;
+
+      @include media(lg) {
+        max-width: 100%;
+        min-width: fit-content;
+      }
     }
   }
 
