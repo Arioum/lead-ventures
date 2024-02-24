@@ -1,5 +1,5 @@
 import Button from '../../components/Button/Button';
-import DotPatternSVG from '/assets/dot-pattern.svg';
+import HeroSVG from '/assets/hero.svg';
 import MouseSVG from '/assets/mouse-scroll.svg';
 import classes from './hero.module.scss';
 
@@ -22,7 +22,7 @@ const Hero = () => {
           </Button>
         </div>
         <div className={classes.header__img}>
-          <img src={DotPatternSVG} alt='' />
+          <img src={HeroSVG} alt='' />
         </div>
       </section>
       <section className={classes.sectionBottom}>
