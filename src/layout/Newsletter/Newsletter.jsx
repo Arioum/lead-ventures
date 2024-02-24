@@ -1,5 +1,5 @@
-import MegaPhoneFill from '../../assets/megaphone-filled.svg';
-import MegaPhoneOut from '../../assets/megaphone-outline.svg';
+import MegaPhoneFill from '/assets/megaphone-filled.svg';
+import MegaPhoneOut from '/assets/megaphone-outline.svg';
 import classes from './newsletter.module.scss';
 
 const Newsletter = () => {

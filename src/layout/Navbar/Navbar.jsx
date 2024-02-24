@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { FiMenu } from 'react-icons/fi';
 import { IoClose } from 'react-icons/io5';
 import Button from '../../components/Button/Button';
-import leadLogo from '../../assets/brand-logo.svg';
+import leadLogo from '/assets/brand-logo.svg';
 import classes from './navbar.module.scss';
 
 const Navbar = () => {

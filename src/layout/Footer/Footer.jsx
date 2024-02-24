@@ -3,7 +3,7 @@ import {
   FaSquareInstagram,
   FaLinkedin,
 } from 'react-icons/fa6';
-import leadLogo from '../../assets/brand-logo.svg';
+import leadLogo from '/assets/brand-logo.svg';
 import classes from './footer.module.scss';
 
 const Footer = () => {

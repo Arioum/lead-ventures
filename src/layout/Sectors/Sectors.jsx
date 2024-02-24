@@ -1,4 +1,4 @@
-import SectorGraphic from '../../assets/section-sectors.svg';
+import SectorGraphic from '/assets/section-sectors.svg';
 import classes from './sectors.module.scss';
 
 const Sectors = () => {

@@ -1,6 +1,6 @@
 import Button from '../../components/Button/Button';
-import ExpertDirector from '../../assets/expert-director.svg';
-import ExpertAnalyst from '../../assets/expert-analyst.svg';
+import ExpertDirector from '/assets/expert-director.svg';
+import ExpertAnalyst from '/assets/expert-analyst.svg';
 import classes from './experts.module.scss';
 
 const experts = [

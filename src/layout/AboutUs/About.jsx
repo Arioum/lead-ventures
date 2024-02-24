@@ -1,6 +1,6 @@
 import Button from '../../components/Button/Button';
 import classes from './about.module.scss';
-import AboutUsSVG from '../../assets/about-us-graphic.svg';
+import AboutUsSVG from '/assets/about-us-graphic.svg';
 
 const About = () => {
   return (
