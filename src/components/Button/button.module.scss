@@ -1,3 +1,5 @@
+@import '../../abstracts.scss';
+
 .button {
   height: 2.5em;
   font-size: 1rem;
@@ -5,6 +7,12 @@
   cursor: pointer;
   border: none;
   border-radius: 5px;
+
+  @include media(lg) {
+    height: 3em;
+    font-size: 0.8rem;
+    border-radius: 3px;
+  }
 }
 
 .btnPrimary {
@@ -26,7 +34,9 @@
 }
 
 .btnSmall {
+  height: 2.5em;
   padding: 0 1em;
+  width: 100%;
   max-width: fit-content;
 }
 
@@ -38,13 +48,4 @@
 .btnLarge {
   padding: 0 3em;
   max-width: fit-content;
-  height: 3rem;
-}
-
-@media (max-width: 968px) {
-  .button {
-    height: 2.5em;
-    font-size: 0.8rem;
-    border-radius: 3px;
-  }
 }

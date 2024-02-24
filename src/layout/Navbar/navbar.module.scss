@@ -1,19 +1,34 @@
+@import '../../abstracts.scss';
+
 .navbar {
   height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
   &__logo {
     width: 200px;
+
+    @include media(lg) {
+      width: 140px;
+    }
   }
 
   &__navLinkContainer {
     font-size: 1rem;
     font-weight: 500;
     display: inherit;
-    list-style: none;
     gap: 2em;
+
+    @include media(lg) {
+      font-size: 0.8rem;
+      gap: 2em;
+    }
+
+    @include media(md) {
+      display: none;
+    }
 
     &__navItems:hover {
       color: #fff;
@@ -23,22 +38,77 @@
   &__btnContainer {
     display: flex;
     gap: 2em;
-  }
-}
 
-@media (max-width: 968px) {
-  .navbar {
-    &__logo {
-      width: 140px;
-    }
-
-    &__navLinkContainer {
-      font-size: 0.8rem;
-      gap: 2em;
-    }
-
-    &__btnContainer {
+    @include media(lg) {
       gap: 1em;
+    }
+
+    @include media(md) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    font-size: 1.4rem;
+    display: none;
+    border: none;
+    background-color: transparent;
+    height: fit-content;
+    cursor: pointer;
+
+    @include media(md) {
+      display: block;
+    }
+
+    &:hover {
+      color: #4dfa92;
+    }
+  }
+
+  &__menuOverlay {
+    position: absolute;
+    right: 1rem;
+    top: 60px;
+    width: 200px;
+    background-color: #17231f;
+    border: 2px solid #345f51;
+    border-radius: 10px;
+    z-index: 1;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+    & > div:first-of-type {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      & > a {
+        font-size: 1rem;
+        font-weight: 500;
+        display: inherit;
+        gap: 2em;
+        padding: 0.6rem;
+
+        &:hover {
+          background-color: #4dfa92;
+          color: #17231f;
+          border-radius: 3px;
+        }
+      }
+    }
+
+    &__btnCont {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      width: 100%;
+
+      & > button {
+        max-width: none;
+        width: 100%;
+      }
     }
   }
 }
