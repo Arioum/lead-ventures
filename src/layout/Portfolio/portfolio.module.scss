@@ -1,3 +1,5 @@
+@import '../../abstracts.scss';
+
 .portfolio {
   display: flex;
   flex-direction: column;
@@ -10,7 +12,17 @@
     font-weight: 600;
     text-align: center;
     line-height: 2;
+
+    @include media(lg) {
+      font-size: 1rem;
+    }
+
+    @include media(md) {
+      font-size: .8rem;
+      font-weight: 500;
+    }
   }
+
   & > p:first-of-type {
     max-width: 700px;
   }
@@ -25,20 +37,26 @@
     overflow: hidden;
     gap: 1em;
     grid-template-columns: repeat(7, 1fr);
-    // grid-template-areas:
-    //   'a a a a a a a'
-    //   '. b b b b b .';
-    // grid-template-rows: auto 1fr 0;
-    // grid-template-columns: 150px 1fr;
+
+    @include media(md) {
+      gap: .5em;
+      // grid-template-columns: repeat(5, 1fr);
+    }
 
     &__col {
       display: flex;
       flex-direction: column;
       gap: 1em;
 
+      @include media(md) {
+        gap: .5em; 
+        justify-content: flex-start;
+      }
+
       &__item {
-        width: 150px;
-        height: 150px;
+        max-width: 150px;
+        max-height: 150px;
+        aspect-ratio: 1;
         border-radius: 5px;
         background-color: #fff;
         display: flex;
@@ -46,30 +64,71 @@
         align-items: center;
         color: #000;
         font-size: 2rem;
+
+        @include media(md) {
+          max-width: 100px;
+          max-height: 100px;
+        }
+
+        & > img {
+          width: 80%;
+        }
       }
 
       &:nth-child(1) {
         transform: translateY(40%);
+
+        @include media(md) {
+          // transform: translateY(0);
+        }
       }
 
       &:nth-child(2) {
         transform: translateY(20%);
+
+        @include media(md) {
+          // transform: translateY(0);
+        }
       }
 
       &:nth-child(3) {
         transform: translateY(10%);
+
+        @include media(md) {
+          // transform: translateY(0);
+        }
       }
 
       &:nth-child(4) {
         transform: translateY(26%);
+
+        @include media(md) {
+          // transform: translateY(0);
+        }
+      }
+
+      
+      &:nth-child(5) {
+
+        @include media(md) {
+          // transform: translateY(0);
+        }
       }
 
       &:nth-child(6) {
         transform: translateY(10%);
+
+        @include media(md) {
+          // transform: translateY(0);
+        }
       }
 
       &:nth-child(7) {
         transform: translateY(30%);
+
+        @include media(md) {
+          // transform: translateY(0);
+        }
       }
     }
   }

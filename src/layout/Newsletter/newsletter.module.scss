@@ -15,15 +15,18 @@
     flex-direction: column;
   }
 
+  @include media(md) {
+    border-radius: 3em;
+    gap: 2rem;
+    padding: 3em 0;
+  }
+
   & > img:nth-child(1) {
     position: absolute;
     left: 0;
     bottom: 20px;
     z-index: -1;
     max-width: 15%;
-
-    @include media(lg) {
-    }
   }
 
   & > img:nth-child(2) {
@@ -46,10 +49,18 @@
       font-size: 2rem;
       font-weight: 600;
 
+      @include media(md) {
+        font-size: 1.6rem;
+      }
+
       & > span {
         display: block;
         font-size: 3rem;
         font-weight: 600;
+
+        @include media(md) {
+          font-size: 2.4rem;
+        }
       }
     }
 
@@ -78,9 +89,17 @@
       color: #202020;
       font-weight: 600;
 
+      @include media(sm) {
+        min-width: 200px;
+      }
+
       &::placeholder {
         font-weight: 600;
         transform: translateY(1px);
+
+        @include media(md) {
+          text-align: center;
+        }
       }
     }
 
@@ -94,7 +113,4 @@
       padding: 1em 3em;
     }
   }
-}
-
-@media (max-width: 968px) {
 }
