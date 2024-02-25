@@ -22,11 +22,11 @@ const Hero = () => {
           </Button>
         </div>
         <div className={classes.header__img}>
-          <img src={HeroSVG} alt='' />
+          <img src={HeroSVG} alt='heroimg' />
         </div>
       </section>
       <section className={classes.sectionBottom}>
-        <img src={MouseSVG} alt='' width={24} />
+        <img src={MouseSVG} alt='mouse-scroll' width={24} />
       </section>
     </header>
   );
