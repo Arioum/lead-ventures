@@ -9,8 +9,12 @@
   overflow: hidden;
   box-shadow: 6px 6px 0 0 #4dfa92;
 
-  @include media(lg) {
-    width: 100%;
+  @include media(xl) {
+    max-width: 100%;
+  }
+
+  @include media(md) {
+    height: 300px;
   }
 
   &__thumbnail {
@@ -19,24 +23,52 @@
     justify-content: center;
     overflow: hidden;
     align-items: center;
-    min-height: max-content;
+
+    @include media(xsm) {
+      max-height: fit-content;
+    }
 
     & > img {
-      max-height: 190px;
+      max-height: fit-content;
 
       @include media(lg) {
-        max-width: 100%;
         min-width: fit-content;
+      }
+
+      @include media(md) {
+        width: 100%;
+        min-height: 100%;
+      }
+
+      @include media(sm) {
+        min-width: 400px;
+        min-height: 100%;
       }
     }
   }
 
   &__info {
     padding: 1em 2em;
+    height: calc(100% - 190px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     & > h6 {
       font-size: 1.2rem;
       margin-bottom: 1em;
+
+      @include media(lg) {
+        font-size: 1rem;
+      }
+
+      @include media(sm) {
+        font-size: 1rem;
+      }
+
+      @include media(xsm) {
+        font-size: 0.8rem;
+      }
     }
 
     &__footer {
@@ -52,12 +84,25 @@
         align-items: center;
         justify-content: space-between;
 
-        & > span:nth-child(1) {
-          color: #0f4634;
+        @include media(xsm) {
+          gap: 0;
         }
 
-        & > span:nth-child(2) {
+        & > span:nth-child(1) {
+          color: #0f4634;
+
+          @include media(xsm) {
+            font-size: 0.6rem;
+          }
+        }
+
+        & > span:nth-child(2),
+        & > span:nth-child(3) {
           color: #474747;
+
+          @include media(xsm) {
+            font-size: 0.6rem;
+          }
         }
       }
     }

@@ -34,9 +34,13 @@ a {
 }
 
 .container {
-  max-width: 114em;
+  max-width: 128em;
   margin: 0 auto;
   padding: 0 2rem;
+
+  @include media(sm) {
+    padding: 0 1rem;
+  }
 }
 
 .mainLayout {

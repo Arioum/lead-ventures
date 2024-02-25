@@ -12,6 +12,7 @@
     background-color: #4dfa92;
     margin-bottom: 5em;
   }
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -33,7 +34,7 @@
   &__main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 5rem;
+    gap: 4rem;
 
     @include media(xl) {
       grid-template-columns: 1fr;
@@ -60,8 +61,7 @@
         }
 
         @include media(md) {
-          grid-template-columns: repeat(1, 1fr);
-          gap: 2em;
+          grid-template-columns: 1fr;
         }
       }
     }
@@ -82,7 +82,13 @@
         gap: 4em;
 
         @include media(xl) {
-          flex-direction: row;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2em;
+        }
+
+        @include media(md) {
+          grid-template-columns: 1fr;
         }
       }
     }
